@@ -3,6 +3,20 @@ Um jogo feito no Unity, 3D e com o intuito de o jogador passar recolhendo todos 
 
 # Fotos do Jogo
 ## Menu
+```csharp
+using UnityEngine;
+using UnityEngine.UIElements;
+using UnityEngine.SceneManagement;
+
+public class TrocarCena : MonoBehaviour
+{
+  
+    public void TrocarCenaReiniciar(){
+        // mudar a cena para a cena fase1
+        SceneManager.LoadScene("fase1");
+    }
+}
+```
 ## Jogo 
 ## Game Over
 ## Fim 
