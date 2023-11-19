@@ -144,10 +144,14 @@ public class TrocarMenu: MonoBehaviour
     }
 }
 ```
-
 # Links Importantes
-### Link do Jogo - 
-### Link do Video -
-### Link dos Assets usados - 
+### Link do Jogo 
+- https://drive.google.com/file/d/1ifPRNFzv0VqznAzTfze2Wa0DKBBosrbR/view?usp=sharing
+### Link do Video 
+- https://youtu.be/mbY28V3xiHw
+### Link dos Assets usados 
+- Ambiente: https://assetstore.unity.com/packages/3d/environments/landscapes/toon-environments-world-creator-pack-lite-264325
+- Morangos: https://assetstore.unity.com/packages/3d/props/food/low-poly-fruit-pickups-98135
+- Personagem: https://assetstore.unity.com/packages/templates/packs/obstacle-course-pack-178169
 # Autores
 Yuri Telis Garcia & Mariana Santiago Matos
