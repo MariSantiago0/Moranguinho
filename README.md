@@ -114,6 +114,15 @@ public class chegada : MonoBehaviour
 }
 ```
 
+### Rotacionar os Morangos
+Funciona para rotacionar os morangos quando o jogo começar.
+```csharp
+void Update()
+    {
+           transform.Rotate(0f, 0f,25f * Time.deltaTime);
+    }
+```
+
 
 ### 
 ## Fim 
