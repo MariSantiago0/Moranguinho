@@ -3,6 +3,15 @@ Um jogo feito no Unity, 3D e com o intuito de o jogador passar recolhendo todos 
 
 # Fotos do Jogo
 ## Menu
+<img src="imgs/menu.png">
+
+#### Hierarquia do Menu
+<img src="imgs/menuHierarquia.png">
+
+#### Inspetor do Menu - BOTÃO
+Arrastar o canvas (que possui o código) e chamar a função TrocarCenaReiniciar() do script TrocarCena.
+<img src="imgs/menuBotao.png">
+
 ### Trocar de Cena (Reiniciar)
 Funciona para trocar de cena para começar a jogar.
 ```csharp
@@ -19,10 +28,20 @@ public class TrocarCena : MonoBehaviour
     }
 }
 ```
+
 ## Jogo
+<img src="imgs/jogo.png">
+
+#### Hierarquia do Jogo
+<img src="imgs/jogoHierarquia.png">
+
+#### Inspetor do Jogo - JOGADOR & CHEGADA(gameobject para mudar de cena)
+<img src="imgs/jogoCodigo.png">
+<img src="imgs/chegadaJogo.png">
+
 ### Sistema de Coração
 Funciona para verificar se o coração deve estar vazio ou cheio.
-Funciona 
+
 ```csharp
 using UnityEngine.UI;
 
@@ -60,6 +79,7 @@ public class HeartSystem : MonoBehaviour
     } 
 }
 ```
+
 ### Sistema de Coleta de Coração
 Funciona para quando o player encostar nos corações contar como um coração colhido no HUD.
 ```csharp
@@ -79,9 +99,29 @@ public class coletar : MonoBehaviour
          
     }
 }
-
 ```
+
+### Sistema de Chegada
+Funciona para verificar se o Gameobject foi colisionado para mudar de cena.
+```csharp
+using UnityEngine.SceneManagement;
+
+public class chegada : MonoBehaviour
+{
+    void OnTriggerEnter (Collider other) { 
+            SceneManager.LoadScene("end");
+        }
+}
+```
+
+
+### 
 ## Fim 
+<img src="imgs/fim.png">
+
+#### Fim Hierarquia
+<img src="imgs/fimHierarquia.png">
+
 ### Trocar de cena para Menu
 Funciona para trocar a cena para o menu do jogo.
 ```csharp
